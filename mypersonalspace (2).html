@@ -218,6 +218,11 @@
           intro.classList.add("visible");
         }, 400);
       });
+        // Rimuove il #dalleventuali ancora nell'URL per evitare scroll automatico
+  if (window.location.hash) {
+    history.replaceState(null, null, window.location.pathname);
+  }
     </script>
   </body>
 </html>
+
