@@ -80,10 +80,11 @@
         transform: translateY(0);
       }
 
-      /* Dropdown annidato */
+      /* Dropdown annidato (Navbar) */
       .dropdown-submenu {
         position: relative;
       }
+
       .dropdown-submenu .dropdown-menu {
         top: 0;
         left: 100%;
@@ -122,8 +123,8 @@
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#drawingsCard">Drawings</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="https://nickfinesso.github.io/personal-space/DISEGNI.html">Disegni</a></li>
-                    <li><a class="dropdown-item" href="https://nickfinesso.github.io/personal-space/THASUP.html">Tha Sup Drawings</a></li>
+                    <li><a class="dropdown-item" href="#drawingsCard">Disegni</a></li>
+                    <li><a class="dropdown-item" href="#drawingsCard">Tha Sup Drawings</a></li>
                   </ul>
                 </li>
 
@@ -170,7 +171,18 @@
             <img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8039.JPG?raw=true" class="card-img-top" alt="Esercizio 2">
             <div class="card-body">
               <h5 class="card-title">DRAWINGS</h5>
-              <a href="#" class="btn btn-success">Vedi</a>
+
+              <!-- Menu dropdown nella card -->
+              <div class="dropdown mt-3">
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                  Scegli
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="https://nickfinesso.github.io/personal-space/DISEGNI.html">Drawings</a></li>
+                  <li><a class="dropdown-item" href="https://nickfinesso.github.io/personal-space/THASUP.html">Tha Sup Drawings</a></li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </div>
