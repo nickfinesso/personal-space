@@ -17,28 +17,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
     <style>
-      html, body {
-        height: 100%;
-        margin: 0;
+      body, .navbar, .card, .banner {
+        font-family: 'Permanent Marker', cursive;
       }
 
       body {
         display: flex;
         flex-direction: column;
         font-family: 'Permanent Marker', cursive;
+        background-image: url('https://github.com/nickfinesso/personal-space/blob/main/sfondo.jpg?raw=true'); /* sostituisci con il link della tua immagine */
+        background-size: cover; /* riempie tutto lo schermo */
+        background-position: center; /* centra l'immagine */
+        background-repeat: no-repeat; /* non ripete l'immagine */
       }
 
-      body {
-        background-image: url('https://github.com/nickfinesso/personal-space/blob/main/sfondo.jpg?raw=true');
-        background-size: cover;      /* riempie tutto senza ripetizioni */
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed; /* (opzionale) effetto elegante tipo parallax */
-      }
-
-      main {
-        flex: 1; /* fa sì che main cresca e spinga il footer in basso */
-      }
 
       .navbar .container-fluid {
         display: flex;
@@ -47,6 +39,43 @@
 
       .navbar .navbar-brand {
         margin-right: 15px;
+      }
+
+      .banner {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+
+      .banner::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        z-index: 1;
+      }
+
+      .banner-content {
+        position: relative;
+        z-index: 2;
+        font-size: 2.5rem;
+        color: white;
+        text-shadow: 2px 2px 5px black;
       }
 
       .card {
@@ -68,71 +97,84 @@
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="https://nickfinesso.github.io/personal-space/mypersonalspace%20(2).html">
-          ← Home
+        <a class="navbar-brand" href="#">
+          <img src="" alt="Logo" width="30" height="26" class="d-inline-block align-text-top">
+          Home
+        </a>
+        <a class="navbar-brand" href="#">
+          <img src="" alt="logo" width="30" height="26" class="d-inline-block align-text-top">
+          Esercizi
+        </a>
+        <a class="navbar-brand" href="#">
+          <img src="" alt="logo" width="25" height="25" class="d-inline-block align-text-top">
+          Scheda personale
         </a>
       </div>
     </nav>
 
-    <main>
-      <!-- Cards -->
-      <div class="container my-5">
-        <div class="row text-center">
-          <!-- Card 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8080%20-%20Copia.jpg?raw=true" class="card-img-top" alt="Esercizio 1">
-              <div class="card-body">
-                <h5 class="card-title">TRA M£ E LE P4RE</h5>
-                <p class="card-text">THIS MATTERS</p>
-                <a href="#" target="_blank" class="btn btn-success">Vedi</a>
-              </div>
-            </div>
-          </div>
 
-          <!-- Card 2 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8049.jpg?raw=true" class="card-img-top" alt="Esercizio 2">
-              <div class="card-body">
-                <h5 class="card-title">ON @ TR!P</h5>
-                <p class="card-text">FLOATHING</p>
-                <a href="#" target="_blank" class="btn btn-success">Vedi</a>
-              </div>
-            </div>
-          </div>
 
-          <!-- Card 3 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8048.JPG?raw=true" class="card-img-top" alt="Esercizio 3">
-              <div class="card-body">
-                <h5 class="card-title">CH!LLING 0N THa M%N</h5>
-                <p class="card-text">ON MY OWN</p>
-                <a href="#" target="_blank" class="btn btn-success">Vedi</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow">
-              <img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8226.jpg?raw=true" class="card-img-top" alt="Esercizio 4">
-              <div class="card-body">
-                <h5 class="card-title">GRAFFIT! $E$</h5>
-                <p class="card-text">NO DR@MA N£L MIO BLUNT</p>
-                <a href="#" target="_blank" class="btn btn-success">Vedi</a>
-              </div>
-            </div>
-          </div>
+    <!-- Cards -->
+<div class="container my-5">
+  <div class="row text-center">
+    <!-- Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow">
+        <img src="C:\Users\niccolo.finesso\Downloads\IMG_8082.jpg" class="card-img-top" alt="Esercizio 1">
+        <div class="card-body">
+          <h5 class="card-title">TRA M£ E LE P4RE</h5>
+          <p class="card-text">THIS MATTERS</p>
+          <a href="#" target="_blank" class="btn btn-success">Vedi</a>
         </div>
       </div>
-    </main>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      © 2025 Nick Finesso — <a href="https://www.instagram.com/niccolo.fine/" target="_blank" class="text-success">Instagram</a>
-    </footer>
+    <!-- Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow">
+        <img src="C:\Users\niccolo.finesso\AppData\Local\Temp\3af4535a-1137-4ccc-a2d4-863adc5f746b_iloveimg-converted (4).zip.46b\IMG_8049 - Copia.jpg" class="card-img-top" alt="Esercizio 2">
+        <div class="card-body">
+          <h5 class="card-title">ON @ TR!P</h5>
+          <p class="card-text">FLOATHING</p>
+          <a href="#" target="_blank" class="btn btn-success">Vedi</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow">
+        <img src="C:\Users\niccolo.finesso\Pictures\Screenshots\IMG_8048.JPG" class="card-img-top" alt="Esercizio 3">
+        <div class="card-body">
+          <h5 class="card-title">CH!LLING 0N THa M%N</h5>
+          <p class="card-text">ON MY OWN</p>
+          <a href="#" target="_blank" class="btn btn-success">Vedi</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card shadow">
+        <img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/IMG_8222.jpg?raw=true" class="card-img-top" alt="Esercizio 3">
+        <div class="card-body">
+          <h5 class="card-title">F@atti di Mol£c0le</h5>
+          <p class="card-text">Deep Gu!t</p>
+          <a href="#" target="_blank" class="btn btn-success">Vedi</a>
+        </div>
+      </div>
+    </div>
+
+<div class="col-md-4 mb-4"><div class="card">
+<img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/Untitled%20design.jpg?raw=true" class="card-img-top">
+<div class="card-body"><h5>My 0wn Plaиet</h5><p>N0 мoяe pRobl3ms</p><a href="#" class="btn btn-success view-btn">Vedi</a></div>
+</div></div>
+
+
+
+  </div>
+</div>
+
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -141,9 +183,6 @@
     ></script>
   </body>
 </html>
-
-
-
 
 
 
