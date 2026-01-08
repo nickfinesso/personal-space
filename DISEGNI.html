@@ -43,26 +43,17 @@ body, .navbar, .card { font-family: 'Permanent Marker', cursive; }
   display: flex;
   flex-direction: column;
   padding: 5px;
-  box-sizing: border-box;
 }
 
-/* HEADER MODAL */
+/* HEADER */
 .modal-header-custom {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 5px 10px;
 }
 
-#modalTitle {
-  font-size: 1.3rem;
-  word-break: break-word;
-}
-
-#modalCounter {
-  font-size: 1rem;
-  opacity: 0.7;
-}
+#modalTitle { font-size: 1.3rem; }
+#modalCounter { opacity: .7; }
 
 /* IMAGE */
 .modal-image-container {
@@ -70,7 +61,6 @@ body, .navbar, .card { font-family: 'Permanent Marker', cursive; }
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .modal-image-container img {
@@ -93,123 +83,110 @@ body, .navbar, .card { font-family: 'Permanent Marker', cursive; }
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
 }
 .arrow-left { left: -25px; }
 .arrow-right { right: -25px; }
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .image-modal { width: 90%; height: 70%; }
-  .arrow-left { left: 10px; }
-  .arrow-right { right: 10px; }
-}
-@media (max-width: 600px) {
-  .image-modal { height: 60%; border-radius: 15px; }
-  .nav-arrow { width: 40px; height: 40px; font-size: 28px; }
-}
 </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid d-flex align-items-center">
-            <a class="navbar-brand d-flex align-items-center" href="https://nickfinesso.github.io/personal-space/mypersonalspace%20(2).html">
-                <span style="font-size:1.5rem; margin-right:8px;">&#8592;</span> Home
-            </a>
-        </div>
-    </nav>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://nickfinesso.github.io/personal-space/mypersonalspace%20(2).html">
+      ← Home
+    </a>
+  </div>
+</nav>
 
 <div class="container my-5">
 <div class="row text-center">
 
 <!-- CARD 1 -->
 <div class="col-md-4 mb-4"><div class="card">
-<img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8345.jpg?raw=true" class="card-img-top">
+<img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8345.jpg?raw=true">
 <div class="card-body"><h5>HAT BOY</h5><p>DEEP SHI</p><a href="#" class="btn btn-success view-btn">Vedi</a></div>
 </div></div>
 
 <!-- CARD 2 -->
 <div class="col-md-4 mb-4"><div class="card">
-<img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8354.jpg?raw=true" class="card-img-top">
+<img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8354.jpg?raw=true">
 <div class="card-body"><h5>SAD GIRL</h5><p>OHH P%R GIRL</p><a href="#" class="btn btn-success view-btn">Vedi</a></div>
 </div></div>
 
 <!-- CARD 3 -->
 <div class="col-md-4 mb-4"><div class="card">
-<img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8261.jpg?raw=true" class="card-img-top">
+<img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8261.jpg?raw=true">
 <div class="card-body"><h5>MOONLIGHT CHILL</h5><p>TROPPA WEEDA</p><a href="#" class="btn btn-success view-btn">Vedi</a></div>
 </div></div>
 
 <!-- CARD 4 -->
 <div class="col-md-4 mb-4"><div class="card">
-<img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8226.jpg?raw=true" class="card-img-top">
+<img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8226.jpg?raw=true">
 <div class="card-body"><h5>SMOK SES</h5><p>CHILLO TRA D! M3</p><a href="#" class="btn btn-success view-btn">Vedi</a></div>
 </div></div>
 
 <!-- CARD 5 -->
 <div class="col-md-4 mb-4"><div class="card">
-<img src="https://github.com/nickfinesso/personal-space/blob/main/9C1E73CB-79AF-42E3-94D2-2E52F73C3E39.jpg?raw=true" class="card-img-top">
-<div class="card-body"><h5>INDIE GIRL</h5><p></p><a href="#" class="btn btn-success view-btn">Vedi</a></div>
+<img src="https://github.com/nickfinesso/personal-space/blob/main/9C1E73CB-79AF-42E3-94D2-2E52F73C3E39.jpg?raw=true">
+<div class="card-body"><h5>INDIE GIRL</h5><a href="#" class="btn btn-success view-btn">Vedi</a></div>
 </div></div>
 
 <!-- CARD 6 -->
 <div class="col-md-4 mb-4"><div class="card">
-<img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/IMG_8045.jpg?raw=true" class="card-img-top">
+<img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/IMG_8045.jpg?raw=true">
 <div class="card-body"><h5>Za mAn</h5><p>R0ll!ng</p><a href="#" class="btn btn-success view-btn">Vedi</a></div>
 </div></div>
 
 <!-- CARD 7 -->
 <div class="col-md-4 mb-4"><div class="card">
-<img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/IMG_8377%20(1).jpg?raw=true" class="card-img-top">
-<div class="card-body"><h5>loo$ing mÿ m!nD</h5><p></p><a href="#" class="btn btn-success view-btn">Vedi</a></div>
+<img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/IMG_8377%20(1).jpg?raw=true">
+<div class="card-body"><h5>loo$ing mÿ m!nD</h5><a href="#" class="btn btn-success view-btn">Vedi</a></div>
 </div></div>
 
 <!-- CARD 8 -->
 <div class="col-md-4 mb-4"><div class="card">
-<img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/IMG_8448.jpg?raw=true" class="card-img-top">
+<img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/IMG_8448.jpg?raw=true">
 <div class="card-body"><h5>DraIn3d</h5><p>dỢn't giVe @ Fuck n0 mor3</p><a href="#" class="btn btn-success view-btn">Vedi</a></div>
 </div></div>
 
 <!-- CARD 9 -->
 <div class="col-md-4 mb-4"><div class="card">
-<img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/IMG_8593.jpg?raw=true" class="card-img-top">
+<img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/IMG_8593.jpg?raw=true">
 <div class="card-body"><h5>Cr£atiVy</h5><p>FrЄЄdom</p><a href="#" class="btn btn-success view-btn">Vedi</a></div>
 </div></div>
 
 <!-- CARD 10 -->
 <div class="col-md-4 mb-4"><div class="card">
-<img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/Untitled%20design.jpg?raw=true" class="card-img-top">
+<img src="https://github.com/nickfinesso/personal-space/blob/main/immagini/Untitled%20design.jpg?raw=true">
 <div class="card-body"><h5>My 0wn Plaиet</h5><p>N0 мoяe pRobl3ms</p><a href="#" class="btn btn-success view-btn">Vedi</a></div>
 </div></div>
 
-<!-- CARD 11 -->
-<div class="col-md-4 mb-4"><div class="card">
-<img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8082.jpg?raw=true" class="card-img-top">
-<div class="card-body"><h5>THA SUP DRAWINGS</h5><p></p><a href="https://nickfinesso.github.io/personal-space/THASUP.html" class="btn btn-success view-btn">Vedi</a></div>
-</div></div>
+<!-- CARD 11 (NO MODAL) -->
+<div class="col-md-4 mb-4">
+<div class="card no-modal">
+<img src="https://github.com/nickfinesso/personal-space/blob/main/IMG_8082.jpg?raw=true">
+<div class="card-body">
+  <h5>THA SUP DRAWINGS</h5>
+  <a href="https://nickfinesso.github.io/personal-space/THASUP.html" class="btn btn-success">Vedi</a>
+</div>
+</div>
+</div>
 
 </div>
 </div>
 
-<!-- OVERLAY -->
+<!-- MODALE -->
 <div id="imageOverlay">
   <div class="image-modal">
     <div class="modal-header-custom">
       <span id="modalTitle"></span>
       <span id="modalCounter"></span>
     </div>
-
     <button class="nav-arrow arrow-left">&#10094;</button>
-
     <div class="modal-image-container">
       <img id="modalImage">
     </div>
-
     <button class="nav-arrow arrow-right">&#10095;</button>
   </div>
 </div>
@@ -219,10 +196,8 @@ const overlay = document.getElementById("imageOverlay");
 const modalImage = document.getElementById("modalImage");
 const modalTitle = document.getElementById("modalTitle");
 const modalCounter = document.getElementById("modalCounter");
-
 const cards = Array.from(document.querySelectorAll(".card"));
 let currentIndex = 0;
-let startX = 0;
 
 function openModal(i){
   currentIndex = i;
@@ -232,13 +207,14 @@ function openModal(i){
 
 function updateModal(){
   const img = cards[currentIndex].querySelector("img");
-  const title = cards[currentIndex].querySelector("h5").innerText;
   modalImage.src = img.src;
-  modalTitle.innerText = title;
-  modalCounter.innerText = `${currentIndex + 1} / ${cards.length}`;
+  modalTitle.innerText = cards[currentIndex].querySelector("h5").innerText;
+  modalCounter.innerText = `${currentIndex + 1} / ${cards.length - 1}`;
 }
 
 cards.forEach((card,i)=>{
+  if(card.classList.contains("no-modal")) return;
+
   card.querySelector("img").onclick = ()=>openModal(i);
   card.querySelector(".view-btn").onclick = e=>{
     e.preventDefault();
@@ -246,34 +222,15 @@ cards.forEach((card,i)=>{
   };
 });
 
-document.querySelector(".arrow-left").onclick = e=>{
-  e.stopPropagation();
-  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+document.querySelector(".arrow-left").onclick = ()=>{
+  currentIndex = (currentIndex - 1 + cards.length - 1) % (cards.length - 1);
   updateModal();
 };
-document.querySelector(".arrow-right").onclick = e=>{
-  e.stopPropagation();
-  currentIndex = (currentIndex + 1) % cards.length;
+document.querySelector(".arrow-right").onclick = ()=>{
+  currentIndex = (currentIndex + 1) % (cards.length - 1);
   updateModal();
 };
 
-/* SWIPE MOBILE */
-modalImage.addEventListener("touchstart", e=>{
-  startX = e.touches[0].clientX;
-});
-modalImage.addEventListener("touchend", e=>{
-  const endX = e.changedTouches[0].clientX;
-  if(startX - endX > 50){
-    currentIndex = (currentIndex + 1) % cards.length;
-    updateModal();
-  }
-  if(endX - startX > 50){
-    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-    updateModal();
-  }
-});
-
-/* CHIUDI */
 overlay.onclick = e=>{
   if(e.target === overlay){
     overlay.style.display = "none";
@@ -284,6 +241,7 @@ overlay.onclick = e=>{
 
 </body>
 </html>
+
 
 
 
